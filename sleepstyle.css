@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url(image/ChatGPT\ Image\ Sep\ 5\,\ 2026\,\ 05_01_39\ PM.png ), linear-gradient(180deg , rgba(10,12,145,.9), rgba(240,252,255,.02));
+    background-repeat: no-repeat;
+    object-fit: contain;
+}
+.navbar{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height:75px;
+    position: relative;
+}
+.nav-links{
+    display:flex;
+    align-items: center;
+    gap:100px;
+    margin-right: 80px;
+    font-weight: 900;
+}
+.nav-links a:hover{
+    color: #BE87FF;
+}
+nav a {
+    text-decoration: none;
+    color: aliceblue;
+    margin-top: 30px;
+    margin-right: 40px;
+    font-size: 20px;
+}
+.nav-links a.active {
+    color: #ffcc00;
+    border-bottom: 2px solid #ffcc00;
+}
+.navbar h1{
+    padding: 15px;
+    color: #DBBB3C;
+    font-family: Brush Script MT;
+}
