@@ -389,3 +389,87 @@ button{
     background: #E67531;
     transition: width 0.4s ease;
 }
+.footer{
+    position: realtive;
+    width: 100%;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    color: white;
+    padding: 70px 8% 40px;
+    min-height: 250px;
+    background: #894205e5;
+}
+.footer-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+.footer-logo:hover{
+    color: rgb(255, 119, 0);
+    transform: translateY(-5px);
+}
+.footer-logo span {
+    color: white;
+    font-weight: bold;
+}
+
+.footer-logo strong {
+    color: white;
+}
+.footer-links {
+    display: flex;
+    gap: 100px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.footer-links a:hover {
+    color: yellow;
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px;
+}
+.social-icons a {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: yellow;
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 17px;
+    font-size: 25px;
+    transition: 0.3s;
+}
+.social-icons a:hover{
+    color: yellow;
+    transform: translateY(-5px);
+    background: red;
+}
+.footer-bottom {
+    text-align: center;
+    margin-top: 55px;
+    font-size: 15px;
+    font-weight: bold;
+}
+html{
+    scroll-behavior: smooth;
+}
