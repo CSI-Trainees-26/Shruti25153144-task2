@@ -65,3 +65,67 @@ nav a:active{
     background: #b7d83b;
     color: #101510;
 }
+.main{
+     flex: 1;
+     min-width:0;
+     margin: 0;
+     padding: 25px;
+    overflow: hidden;
+}
+.hero {
+      position: relative;
+      height: 250px;
+      width: 100%;
+      border-radius: 12px;
+      overflow: hidden;
+      
+      background: linear-gradient(90deg, rgba(10,12,10,.8),rgba(10,10,10,.15)), url("./image/Eren\ Yeager\ Wallpaper\ Final\ Form\ Hd\ -\ Free\ Download.jpg");
+      padding: 50px;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      border: 1px solid #474747;
+}
+.hero-content h1{
+    color: white;
+    letter-spacing: -2px;
+    font-size: 42px;
+}
+.hero-content h1 span, .hero-content p span {
+    color: #7EC44F;
+}
+.hero-content p{
+    margin-top: 25px;
+    color: white;
+    font-size: 20px;
+}
+.today{
+     position: relative;
+    height: 60px;
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid #474747;
+    padding: 20px;
+    margin-top: 20px;
+    color: white;
+    background: linear-gradient(120deg , black ,#0B1C0B , rgba(12,13,13,.9));
+}
+.about{
+    position: relative;
+    height: 130px;
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid #474747;
+    padding: 20px;
+    margin-top: 20px;
+    color: white;
+    background: linear-gradient(120deg , black ,#0B1C0B , rgba(12,13,13,.9));
+}
+.about h2{
+        display: flex;
+        margin: 10px;
+}
+.about h4{
+    margin: 10px;
+    color: #60E065;
+}
