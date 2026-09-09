@@ -49,6 +49,3 @@ function addCalories(amount)
     let percentage= (calories/2400)*100;
     document.getElementById("calorieBar").style.width=percentage + "%";
 }
-
-
-

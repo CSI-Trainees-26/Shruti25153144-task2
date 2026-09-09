@@ -18,60 +18,131 @@
    </div>
   </nav>
   <!-- main section-->
- <main class="main">
-  <div class="hero">
-     <h1>Enhance your<br> sleep quality</h1>
-     <p>Have a better sleep quality to reduce stress.<br>Wake up refreshed and feel energetic.</p>
-     
-     <div class="table">
-      
-        <div class="box1">
-            <h2 id="time"></h2>
-            <h2 id="date"></h2>
-        </div>
-      
-       <section id="track">
-        <div class="box2">
-          <div class="time">
-            <h1>SLEEP-TRACKER</h1>
-           <div class="sleep">
-            <h2><span id="timeTracker">0</span> / 8
-            </h2>
-           </div>
-          </div>
-          <div class="timebar">
-              <div id="timeBar1"></div>
-              <div id="timeBar2"></div>
-              <div id="timeBar3"></div>
-              <div id="timeBar4"></div>
-          </div>
-            <div class="buttons">
-              <button onclick="addTime(1)">+1 hour</button>
-            </div>
-        </div>
-       </section>
-        <section id="detail">
-        <div class="box3">
-          <span style="color: red;"><h3>🟥 = RED (Body requires sleep)</h3></span>
-          <span style="color: orange;"><h3>🟧 = ORANGE (Good for the body if the hour will be more)</h3></span>
-          <span style="color: yellow;"><h3>🟨 = YELLOW (Body can function well)</h3></span>
-          <span style="color: #3DFF0E;"><h3>🟩 = GREEN (Best sleep cycle for proper functioning)</h3></span>
-              
-        </div>
-       </section>
-
+<main class="main">
+  <div class="table-1">
+    <div class="content-1">
+      <h1>Enhance your<br><span style="color:#3DFF0E;" >sleep quality</span></h1>
+      <p>Have a better sleep quality to reduce stress.<br>Wake up refreshed and feel energetic.</p>
+    </div>
+    <div class="content-2">
+      <div class="box1">
+        <h1 id="time"></h1>
+        <h3 id="date"></h3>
       </div>
-    
     </div>
+  </div>
   
-  
-
-
+  <div class="table-2">
+    <div class="circle">
+      <div class="sleep-value">
+        <span id="hours">07</span><medium>hr</medium>
+        <p id="minutes">20min</p>
+        <h3>GOOD SLEEP</h3>
+      </div>
     </div>
- </main>
+  <section id="track">
+      <div class="schedule">
+        <div class="title-row">
+          <h2>YOUR SCHEDULE</h2>
+        </div>
+        <div class="days">
+          <button onclick="selectDay(0)">M</button>
+          <button onclick="selectDay(1)">T</button>
+          <button onclick="selectDay(2)">W</button>
+          <button onclick="selectDay(3)">T</button>
+          <button onclick="selectDay(4)">F</button>
+          <button onclick="selectDay(5)">S</button>
+          <button onclick="selectDay(6)">S</button>
+        </div>
+        <div class="selected">
+          <h1 id="selectedDay">Monday</h1>
+          <div class="input-box">
+            <label for="sleepInput">
+              How many hours did you sleep?
+            </label>
+            <input type="number"
+            id="sleepInput"
+            placeholder="Enter hours"
+            min="0"
+            max="24"
+            step="0.5">
+            <button class="save" onclick="saveSleep()">Save Sleep</button>
+          </div>
+      </div>
+    </div>
+    </div> 
+    <div class="table-3">
+      <div class="box2">
+        <div class="time">
+          <h1>REAL TIME SLEEP-TELLER</h1>
+          <div class="sleep">
+          <h2><span id="timeTracker">0</span> / 8
+          </h2>
+          </div>
+        </div>
+        <div class="timebar">
+            <div id="timeBar1"></div>
+            <div id="timeBar2"></div>
+            <div id="timeBar3"></div>
+            <div id="timeBar4"></div>
+        </div>
+        <div class="buttons">
+          <button onclick="addTime(1)">+1 hour</button>
+          <button onclick="addTime(2)">+2 hour</button>
+          <button onclick="addTime(4)">+4 hour</button>
+          <button onclick="addTime(6)">+6 hour</button>
+          <button onclick="addTime(8)">+8 hour</button>
+        </div>
+      </div>
+      <div class="data">
+        <h2>WEEKLY SLEEP GRAPH</h2>
+        <div class="graph">
+          <div class="bar-graph">
+            <div class="bar" id="bar0"></div>
+            <p>M</p>
+          </div>
+          <div class="bar-graph">
+            <div class="bar" id="bar1"></div>
+            <p>T</p>
+          </div>
+          <div class="bar-graph">
+            <div class="bar" id="bar2"></div>
+            <p>W</p>
+          </div>
+          <div class="bar-graph">
+            <div class="bar" id="bar3"></div>
+            <p>T</p>
+          </div>
+          <div class="bar-graph">
+            <div class="bar" id="bar4"></div>
+            <p>F</p>
+          </div>
+          <div class="bar-graph">
+            <div class="bar" id="bar5"></div>
+            <p>S</p>
+          </div>
+          <div class="bar-graph">
+            <div class="bar" id="bar6"></div>
+            <p>S</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+      
+  <section id="detail">
+    <div class="box3">
+      <span style="color: red;"><h3>🟥 = RED (Body requires sleep)</h3></span>
+      <span style="color: orange;"><h3>🟧 = ORANGE (Good for the body if the hour will be more)</h3></span>
+      <span style="color: yellow;"><h3>🟨 = YELLOW (Body can function well)</h3></span>
+      <span style="color: #3DFF0E;"><h3>🟩 = GREEN (Best sleep cycle for proper functioning)</h3></span>
+          
+    </div>
+  </section>
+</main>
 
     
 
-<script src="script2.js"></script>
+<script src="sleep.js"></script>
 </body>
 </html>
